@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CineQuest</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: #e1e1e1;
+        }
+        .brand {
+            font-family: 'Playfair Display', sans-serif;
+            color: #d74346;
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .brand-line {
+            width: 100px;
+            height: 3px;
+            background-color: #d74346;
+            margin: 0 auto 40px auto;
+        }
+        .search-form {
+            margin: 20px 0;
+            text-align: center;
+        }
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            background-color: #2d2d2d;
+            border: 1px solid #404040;
+            color: #e1e1e1;
+            border-radius: 4px;
+            transition: border-color 0.3s ease;
+        }
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #d74346;
+            box-shadow: 0 0 0 2px rgba(107, 70, 193, 0.2);
+        }
+        input[type="text"]::placeholder {
+            color: #888;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #d74346;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #fb6567;
+        }
+        h1 {
+            color: #d74346;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="brand">CineQuest</div>
+    <div class="brand-line"></div>
+    <h1>Find Your Next Movie</h1>
+    <form class="search-form" method="post" autocomplete="off">
+        <p>Describe the type of movie you're in the mood for:</p>
+        <input type="text" id="preferences" name="preferences" 
+               placeholder="e.g., 'action movies with car chases' or 'romantic comedies set in New York'" required>
+        <br>
+        <button type="submit">Get Recommendations</button>
+    </form>
+</body>
+</html>

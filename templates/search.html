@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineQuest</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typeit/dist/typeit.min.js"></script>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+    
+
+
+    <div class="modal fade" id="Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <input type="text" class="form-control" placeholder=" Name" >
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder=" Mobile No.">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder=" Official E-mail">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder=" Company Website">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer justify-content-center">
+              </div> 
+          </div>
+        </div>
+    </div>
+
+    <section id="mobile-bottom-nav">
+        <div class="d-md-none">
+            <nav class="navbar fixed-bottom bg-nav-2">
+                <div class="container-fluid">   
+                    <div class="col-md-4 mx-auto text-light text-center">
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <section id="header">
+        <div class="container-fluid" style="padding:0px;overflow:hidden;background-image: url('Images/bg.jpg'); background-position: center; background-attachment: scroll; background-attachment: scroll;background-repeat: no-repeat; background-size: cover;">
+            <div class="row text-light pt-5">
+                <div class="col-md-10 mx-auto pt-3">
+                    <div class="row text-center">
+                        <div class="col-md pt-4 content-3">
+                            <h2 class="cinque">CineQuest</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pb-5">
+                <div class="d-none d-md-block">
+                    <div class="d-none d-md-block">
+                        <div class="col-md-11 mx-auto pb-5">
+                            <div class="input-group">
+                                <button class="btn btn-custom custom-height" type="button">Recommend Me</button>
+                                <button class="btn btn-custom custom-height" type="button">Browse</button>
+                                <button class="btn btn-custom custom-height" type="button">Search</button>
+                            </div>                    
+                        </div>
+                    </div>
+                </div>
+                <div class="d-md-none">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-7 pl-md-4">
+                                <div class="input-group d-grid">
+                                    <div class="mb-2">
+                                        <input type="text" class="form-control custom-height" placeholder=" Name">
+                                    </div>
+                                    <div class="mb-2">
+                                        <input type="text" class="form-control custom-height" placeholder=" Mobile No.">
+                                    </div>
+                                    <div class="mb-2">
+                                        <input type="text" class="form-control custom-height" placeholder=" Official E-mail">
+                                    </div>
+                                    <div class="mb-2">
+                                        <input type="text" class="form-control custom-height" placeholder=" Company Website">
+                                    </div>
+                                </div>
+                                <div class="d-grid">
+                                    <button class="btn btn-success text-light custom-height" type="button">SCHEDULE A CALL</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pb-3 pt-3"></div>
+        </div>
+    </section>
+
+    <section class="trending-section">
+        <h2 class="trending-title">Trending Movies</h2>
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="What are you looking for?">
+        </div>
+        <div class="movie-grid">
+            <div class="movie-card">
+                <img src="Images/movie1.jpg" alt="Movie 1">
+                <p>Wall-E</p>
+            </div>
+            <div class="movie-card">
+                <img src="Images/movie2.png" alt="Movie 2">
+                <p>Up</p>
+            </div>
+            <div class="movie-card">
+                <img src="Images/movie3.jpg" alt="Movie 3">
+                <p>Barbie</p>
+            </div>
+            <div class="movie-card">
+                <img src="Images/movie4.jpeg" alt="Movie 4">
+                <p>Joker</p>
+            </div>
+            <div class="movie-card">
+                <img src="Images/movie5.jpg" alt="Movie 5">
+                <p>Openheimer</p>
+            </div>
+            <div class="movie-card">
+                <img src="Images/movie6.jpg" alt="Movie 6">
+                <p>Spider Man</p>
+            </div>
+            <div class="movie-card">
+                <img src="movie7.jpg" alt="Movie 7">
+                <p>Movie Title 7</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="products">
+        <div class="container-fluid bg-col-1 pb-3">
+            <div class="d-none d-md-block">
+                <div class="row">
+                    <div class="col-md-10 mx-auto pt-5">
+                        <div class="row text-center">
+                            <h3 style="font-weight: 350;"> About us </h3>
+                            <hr class="hr-k">
+                        </div>
+                        <div class="row pt-4 text-center">
+                            <div class="col-md shadow-item">
+                                <h4 style="font-weight: 350; color: #d74346;"> About the Website </h4>
+                                <p class="pt-3 pb-2"></p>
+                                <p style="color: #737789;">Discover the best movie recommendations, from blockbusters to hidden gems!</p>
+                            </div>
+                            <div class="col-md shadow-item">
+                                <h4 style="font-weight: 350; color: #d74346;"> How It Works </h4>
+                                <p class="pt-1"></p>
+                                <p style="color: #737789;">Browse, explore, and find the perfect movie to watch in seconds!</p>
+                            </div>
+                            <div class="col-md shadow-item">
+                                <h4 style="font-weight: 350; color: #d74346;"> Why Choose Us?</h4>
+                                <p class="pt-3 pb-2"></p>
+                                <p style="color: #737789;">Handpicked movies, latest trends, and personalized suggestions!</p>
+                            </div>
+                            <div class="col-md shadow-item">
+                                <h4 style="font-weight: 350; color: #d74346;"> Trending Now </h4>
+                                <p class="pt-1 "></p>
+                                <p style="color: #737789;">Check out the hottest movies everyone’s watching right now!</p>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+    
+    <section id="features">
+        <div class="container-fluid bg-col-1 pt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md text-center">
+                        <h2 style="font-weight: 350;">Features</h2>
+                        <hr class="hr-k">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 mx-auto">
+                        <div class="row pt-4 text-center">
+                            <div class="col-md shadow-item-1">
+                                <div class="icon-box">
+                                    <h4 class="loggo pt-4 pb-5 "><i class="fa-solid fa-cloud fa-2xl"></i></h4>
+                                </div>
+                                <p style="color:#d74346;font-size:20px" class="pt-3 pb-2">Open Source & Developer Friendly</p>
+                                <p style="color: #737789;">FOur platform is fully open-source, allowing developers to modify, extend, and contribute to the codebase. With detailed API documentation and community support, integration becomes seamless and hassle-free.</p>
+                            </div>
+                            <div class="col-md shadow-item-1">
+                                <div class="icon-box">
+                                    <h4 class="loggo pt-4 pb-5"><i class="fa-solid fa-2xl fa-rotate-right"></i></h4>
+                                </div>
+                                <p style="color:#d74346;font-size:20px" cclass="pt-1">Webhook</p>
+                                <p style="color: #737789;">Get real-time notifications for every transaction, API event, or system update via webhooks. This ensures instant updates and automation without the need for continuous API polling.</p>
+                            </div>
+                            <div class="col-md shadow-item-1">
+                                <div class="icon-box">
+                                    <h4 class="loggo pt-4 pb-5"><i class="fa-solid fa-2xl fa-upload"></i></h4>
+                                </div>
+                                <p style="color:#d74346;font-size:20px" cclass="pt-3 pb-2">Bulk API Requests</p>
+                                <p style="color: #737789;">Process thousands of requests in one batch, reducing API overhead and improving efficiency. Bulk operations ensure high-speed processing without affecting performance or reliability.</p>
+                            </div>
+                            <div class="col-md shadow-item-1">
+                                <div class="icon-box">
+                                    <h4 class="loggo pt-4 pb-5"><i class="fa-solid fa-2xl fa-user-large-slash"></i></h4>
+                                </div>
+                                <p style="color:#d74346;font-size:20px" cclass="pt-1 ">No Pre-Configuration Required</p>
+                                <p style="color: #737789;">Start using the APIs immediately without any complex pre-configurations or dependencies. Our plug-and-play architecture ensures a smooth onboarding process for developers.</p>
+                            </div>
+                        </div> 
+                    </div>
+                    
+                    <div class="pb-4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <div class="footer-banner">
+        <footer class="footer2 pt-4">
+            <div class="container">
+                <div class="d-none d-md-block">
+                    <div class="row">
+                        <div class="col-md" style="padding-left: 125px;">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h5>Movies</h5>
+                                    <h6 style="font-weight: lighter;">Trending Now</h6>
+                                    <h6 style="font-weight: lighter;">Top Rated</h6>
+                                    <h6 style="font-weight: lighter;">New Releases</h6>
+                                </div>
+                                <div class="col-md-3">
+                                    <h5>Discover</h5>
+                                    <h6 style="font-weight: lighter;">Genres (Action, Comedy, Horror, etc.)</h6>
+                                    <h6 style="font-weight: lighter;">Recommended for You</h6>
+                                    <h6 style="font-weight: lighter;">Hidden Gems</h6>
+                                </div>
+                                <div class="col-md-3">
+                                    <h5>Community</h5>
+                                    <h6 style="font-weight: lighter;">Reviews & Ratings</h6>
+                                    <h6 style="font-weight: lighter;">Discussions & Forums</h6>
+                                    <h6 style="font-weight: lighter;">Fan Theories</h6>
+                                </div>
+                                <div class="col-md-1">
+                                    <h5>Support</h5>
+                                    <h6 style="font-weight: lighter;">Contact Us</h6>
+                                    <h6 style="font-weight: lighter;">FAQs</h6>
+                                    <h6 style="font-weight: lighter;">Terms & Privacy</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="d-md-none">
+                    <div class="row" style="padding:20px">
+                        <div class="col-6">
+                            <h5>Movies</h5>
+                            <h6 style="font-weight: lighter;font-size:12px">Trending Now</h6>
+                            <h6 style="font-weight: lighter;font-size:12px">Top Rated</h6>
+                            <h6 style="font-weight: lighter;font-size:12px">New Releases</h6>
+                        </div>
+                        <div class="col-6">
+                            <h5>Discover</h5>
+                            <h6 style="font-weight: lighter;font-size:12px">Genres (Action, Comedy, Horror, etc.)</h6>
+                            <h6 style="font-weight: lighter;font-size:12px">Recommended for You</h6>
+                            <h6 style="font-weight: lighter;font-size:12px">Hidden Gems</h6>
+                        </div>
+                    </div>
+                    <div class="row pt-4" style="padding:20px">
+                        <div class="col-6">
+                            <h5>Community</h5>
+                            <h6 style="font-weight: lighter;font-size:12px">Reviews & Ratings</h6>
+                            <h6 style="font-weight: lighter;font-size:12px">Discussions & Forums</h6>
+                            <h6 style="font-weight: lighter;font-size:12px">Fan Theories</h6>
+                        </div>
+                        <div class="col-6">
+                            <h5>Support</h5>
+                            <h6 style="font-weight: lighter;font-size:12px">Contact Us</h6>
+                            <h6 style="font-weight: lighter;font-size:12px">FAQs</h6>
+                            <h6 style="font-weight: lighter;font-size:12px">Terms & Privacy</h6>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row text-center pt-3 pb-0" style="padding:15px">
+                    <p style="font-size: small;">Copyright ©️ 2024 <a href="#" class="text-white" style="text-decoration: none;">CineQuest</a>. All Rights Reserved.</p>            
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
