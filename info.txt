@@ -1,3 +1,6 @@
 TMDB_API_KEY = '42a927985c260dc50bc9a9a1abf0fe4f'
 
 OPENAI_API_KEY = "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"
+
+
+GOOGLE DRIVE LINK (for the databases used) : https://drive.google.com/drive/folders/15dx8kBvEhaYxF0BON0FxmNFR3CUea0Rx
